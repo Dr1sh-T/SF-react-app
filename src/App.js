@@ -5,6 +5,7 @@ import Fetch from './usefetch';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Box from './Box';
 import Cart from './Cart';
+import Navbar from './Navbar';
 
 function App() {
   const { map } = Fetch();
@@ -29,6 +30,7 @@ function App() {
     <Router>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div className="App">
+    <Navbar />
         <Switch>
           <Route path="/Home">
             <header className="Navbar">
